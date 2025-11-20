@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLISS eduPower Brochure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .brochure {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .tagline {
+            font-size: 1.3em;
+            font-style: italic;
+            opacity: 0.95;
+        }
+        
+        .header .address {
+            margin-top: 15px;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px;
+        }
+        
+        .section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #2a5298;
+        }
+        
+        .section h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #2a5298;
+            padding-bottom: 10px;
+        }
+        
+        .section h3 {
+            color: #2a5298;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .section p, .section li {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .section ul {
+            margin-left: 20px;
+        }
+        
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .course-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 3px solid #667eea;
+        }
+        
+        .course-card h4 {
+            color: #1e3c72;
+            margin-bottom: 8px;
+        }
+        
+        .course-card .price {
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 8px;
+        }
+        
+        .discount-badge {
+            background: #ff4757;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.85em;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .perks-section {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            border: none;
+        }
+        
+        .perks-section h2 {
+            color: white;
+            border-bottom: 2px solid white;
+        }
+        
+        .perks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .perk-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .perk-item h4 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .footer {
+            background: #1e3c72;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .courses-grid, .perks-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="brochure">
+        <div class="header">
+            <h1>🎓 BLISS eduPower</h1>
+            <p class="tagline">Unleash the Power of Education...</p>
+            <p class="address">📍 #235 BEML Layout, 2nd Stage, R.R. Nagar, Sharda Devi Nagar, Dattagalli, Mysuru-570023</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="section">
+                <h2>📚 Learning Modes</h2>
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-top: 15px;">
+                    <h3 style="color: white; margin-bottom: 15px;">🎯 Flexible Learning Options</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; backdrop-filter: blur(10px);">
+                            <h4 style="margin-bottom: 10px;">🏢 Offline Classes</h4>
+                            <p style="color: white;">Face-to-face interactive sessions at our institute with hands-on practice in our computer labs.</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; backdrop-filter: blur(10px);">
+                            <h4 style="margin-bottom: 10px;">💻 Online Classes</h4>
+                            <p style="color: white;">Live interactive online sessions from anywhere with recorded lectures and virtual lab access.</p>
+                        </div>
+                    </div>
+                    <p style="margin-top: 15px; text-align: center; font-weight: bold;">Choose the mode that suits your schedule and preferences!</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>About Us</h2>
+                <p>BLISS eduPower is a premier computer science and programming education center dedicated to empowering students with cutting-edge technical skills. We specialize in comprehensive training programs covering modern web technologies, programming languages, and software development practices.</p>
+                <p><strong>Our Mission:</strong> To bridge the gap between academic learning and industry requirements by providing hands-on, project-based training that prepares students for successful careers in technology.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Who Can Join?</h2>
+                <ul>
+                    <li>✅ Diploma in Computer Science students</li>
+                    <li>✅ BCA (Bachelor of Computer Applications) students</li>
+                    <li>✅ BSc Computer Science students</li>
+                    <li>✅ Engineering students (CSE, ISE, ECE)</li>
+                    <li>✅ PUC (PCMC) students</li>
+                    <li>✅ School students interested in programming</li>
+                    <li>✅ Anyone passionate about coding and technology</li>
+                </ul>
+            </div>
+            
+            <div class="section" style="grid-column: 1 / -1;">
+                <h2>📚 Our Comprehensive Curriculum</h2>
+                
+                <h3>🌐 Web Development Track</h3>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">📄</div>
+                        <h4>HTML5 & CSS3</h4>
+                        <p>Build stunning web pages with modern HTML5 and advanced CSS3 styling techniques.</p>
+                        <p class="price">₹4,500</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">⚡</div>
+                        <h4>JavaScript</h4>
+                        <p>Learn dynamic programming for interactive websites and web applications.</p>
+                        <p class="price">₹5,200</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">⚛️</div>
+                        <h4>React.js</h4>
+                        <p>Master the most popular JavaScript library for building modern user interfaces and SPAs.</p>
+                        <p class="price">₹6,500 <span class="discount-badge">15% OFF</span></p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🚀</div>
+                        <h4>Full Stack Development</h4>
+                        <p>Complete web development including frontend, backend, databases, and deployment strategies.</p>
+                        <p class="price">₹7,800 <span class="discount-badge">15% OFF</span></p>
+                    </div>
+                </div>
+                
+                <h3>💻 Programming Languages</h3>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🐍</div>
+                        <h4>Python Programming</h4>
+                        <p>From basics to advanced concepts including OOP, data structures, and real-world applications.</p>
+                        <p class="price">₹4,500</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">©️</div>
+                        <h4>C Programming</h4>
+                        <p>Master the foundation of programming with C language - pointers, arrays, and structures.</p>
+                        <p class="price">₹4,500</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">➕</div>
+                        <h4>C++ Programming</h4>
+                        <p>Advanced object-oriented programming with C++ including STL and modern C++ features.</p>
+                        <p class="price">₹5,000</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">☕</div>
+                        <h4>Java Programming</h4>
+                        <p>Complete Java training covering core concepts, OOP, collections, and enterprise applications.</p>
+                        <p class="price">₹5,200</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🔷</div>
+                        <h4>C# & .NET</h4>
+                        <p>Learn C# programming and .NET framework for building Windows applications and web services.</p>
+                        <p class="price">₹5,800</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🐘</div>
+                        <h4>PHP & MySQL</h4>
+                        <p>Server-side scripting with PHP and database management with MySQL for dynamic web applications.</p>
+                        <p class="price">₹5,500</p>
+                    </div>
+                </div>
+                
+                <h3>🔬 Advanced Topics</h3>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🔗</div>
+                        <h4>Data Structures & Algorithms</h4>
+                        <p>Master DSA concepts essential for coding interviews and competitive programming.</p>
+                        <p class="price">₹6,200</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">💾</div>
+                        <h4>Database Management (DBMS)</h4>
+                        <p>Learn SQL, database design, normalization, and relational database management systems.</p>
+                        <p class="price">₹5,500</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">⚙️</div>
+                        <h4>Software Engineering</h4>
+                        <p>Software development lifecycle, design patterns, testing, and project management.</p>
+                        <p class="price">₹6,000</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🤖</div>
+                        <h4>Artificial Intelligence & ML</h4>
+                        <p>Introduction to AI concepts, machine learning algorithms, and practical AI tools.</p>
+                        <p class="price">₹7,500 <span class="discount-badge">25% OFF</span></p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🖥️</div>
+                        <h4>Operating Systems</h4>
+                        <p>Understand OS concepts, process management, memory management, and system programming.</p>
+                        <p class="price">₹5,000</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🌐</div>
+                        <h4>Computer Networking</h4>
+                        <p>Learn network protocols, security, architecture, and hands-on network configuration.</p>
+                        <p class="price">₹5,500</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🔒</div>
+                        <h4>Cyber Security & Tools</h4>
+                        <p>Network security, ethical hacking, cryptography, and security tools for protecting systems.</p>
+                        <p class="price">₹7,000 <span class="discount-badge">20% OFF</span></p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">📐</div>
+                        <h4>Mathematical Foundations</h4>
+                        <p>Discrete mathematics, logic, algorithms analysis, and mathematical concepts for programming.</p>
+                        <p class="price">₹5,200</p>
+                    </div>
+                </div>
+                
+                <h3>🎨 Design & Development Tools</h3>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🎨</div>
+                        <h4>UI/UX Design</h4>
+                        <p>Learn user interface and user experience design principles, wireframing, and prototyping.</p>
+                        <p class="price">₹6,000</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🔀</div>
+                        <h4>Git & GitHub</h4>
+                        <p>Master version control, collaboration, and open-source contribution with Git and GitHub.</p>
+                        <p class="price">₹3,500</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">📊</div>
+                        <h4>Microsoft Office</h4>
+                        <p>Complete MS Office suite training - Word, PowerPoint, Outlook for professional productivity.</p>
+                        <p class="price">₹4,500</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">📈</div>
+                        <h4>Excel Advanced</h4>
+                        <p>Master advanced Excel - formulas, pivot tables, macros, VBA, and data analysis.</p>
+                        <p class="price">₹5,000</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">📊</div>
+                        <h4>R Programming</h4>
+                        <p>Statistical computing and data analysis with R for data science applications.</p>
+                        <p class="price">₹5,500</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">💻</div>
+                        <h4>Fundamentals of Computers</h4>
+                        <p>Complete computer basics for beginners including hardware, software, and digital literacy.</p>
+                        <p class="price">₹4,500</p>
+                    </div>
+                </div>
+                
+                <h3>☁️ IoT & Cloud Computing</h3>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🌐</div>
+                        <h4>Internet of Things (IoT)</h4>
+                        <p>Learn IoT fundamentals, sensors, Arduino, Raspberry Pi, and building connected smart devices.</p>
+                        <p class="price">₹6,800</p>
+                    </div>
+                    <div class="course-card">
+                        <div style="font-size: 2em; margin-bottom: 8px;">☁️</div>
+                        <h4>Cloud Computing</h4>
+                        <p>Master cloud platforms (AWS, Azure, Google Cloud), deployment, and cloud-based solutions.</p>
+                        <p class="price">₹7,200 <span class="discount-badge">18% OFF</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="perks-section">
+                <h2>🌟 Exclusive Benefits & Perks</h2>
+                <div class="perks-grid">
+                    <div class="perk-item">
+                        <h4>📄 Resume Building</h4>
+                        <p>Professional resume creation and optimization to help you stand out to recruiters</p>
+                    </div>
+                    <div class="perk-item">
+                        <h4>💼 LinkedIn Profile</h4>
+                        <p>Expert guidance on building a strong LinkedIn presence and professional networking</p>
+                    </div>
+                    <div class="perk-item">
+                        <h4>🏆 Hackathons</h4>
+                        <p>Regular participation opportunities in coding competitions and hackathons</p>
+                    </div>
+                    <div class="perk-item">
+                        <h4>🚀 Live Projects</h4>
+                        <p>Hands-on experience with real-world projects to build your portfolio</p>
+                    </div>
+                    <div class="perk-item">
+                        <h4>🎯 Interview Prep</h4>
+                        <p>Mock interviews, coding challenges, and technical interview preparation</p>
+                    </div>
+                    <div class="perk-item">
+                        <h4>📜 Certifications</h4>
+                        <p>Industry-recognized course completion certificates to boost your credentials</p>
+                    </div>
+                    <div class="perk-item">
+                        <h4>👥 Mentorship</h4>
+                        <p>One-on-one guidance from experienced industry professionals</p>
+                    </div>
+                    <div class="perk-item">
+                        <h4>💻 Practical Labs</h4>
+                        <p>Access to fully equipped computer labs with latest software and tools</p>
+                    </div>
+                    <div class="perk-item">
+                        <h4>🌐 Job Assistance</h4>
+                        <p>Career guidance and job placement support after course completion</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🎁 Special Offers</h2>
+                <ul>
+                    <li>🎉 <strong>Early Bird Discount:</strong> 20% off on enrollments within first week</li>
+                    <li>👥 <strong>Group Discount:</strong> 15% off for groups of 3 or more students</li>
+                    <li>🎓 <strong>Student Special:</strong> Additional 10% off for current students with valid ID</li>
+                    <li>📚 <strong>Bundle Offer:</strong> Enroll in 2 courses and get 3rd at 50% off</li>
+                    <li>🔄 <strong>Referral Bonus:</strong> Refer a friend and get ₹500 cashback</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Why Choose BLISS eduPower?</h2>
+                <ul>
+                    <li>✨ Industry-expert instructors with real-world experience</li>
+                    <li>✨ Small batch sizes for personalized attention</li>
+                    <li>✨ Flexible weekend and weekday batches</li>
+                    <li>✨ Updated curriculum aligned with industry trends</li>
+                    <li>✨ Lifetime access to course materials and recordings</li>
+                    <li>✨ Project-based learning approach</li>
+                    <li>✨ Regular coding competitions and workshops</li>
+                    <li>✨ Alumni network and community support</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h2>📞 Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+91 9449344298</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+91 9916777925</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+91 8095155552</span>
+                </div>
+            </div>
+            <p style="margin-top: 20px; font-size: 1.1em;">🚀 Start Your Coding Journey Today!</p>
+            <p style="margin-top: 10px;">Limited seats available - Enroll now and transform your career!</p>
+        </div>
+    </div>
+</body>
+</html>
